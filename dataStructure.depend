@@ -27,3 +27,31 @@
 	<stdio.h>
 	<stdlib.h>
 
+1581084034 source:e:\sprints\sprints_datastructure\datastructure\linkedlist.c
+	"linkedlist.h"
+	<stdio.h>
+	<stdlib.h>
+
+1581069849 e:\sprints\sprints_datastructure\datastructure\linkedlist.h
+
+1581069849 source:e:\sprints\sprints_datastructure\datastructure\queue.c
+	<stdlib.h>
+	<stdio.h>
+	"queue.h"
+
+1581069849 e:\sprints\sprints_datastructure\datastructure\queue.h
+
+1581069849 source:e:\sprints\sprints_datastructure\datastructure\stack.c
+	<stdlib.h>
+	<stdio.h>
+	"stack.h"
+
+1581069849 e:\sprints\sprints_datastructure\datastructure\stack.h
+
+1581084129 source:e:\sprints\sprints_datastructure\datastructure\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+	"queue.h"
+	"linkedlist.h"
+

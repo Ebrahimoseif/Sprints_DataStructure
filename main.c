@@ -5,6 +5,7 @@
 #include"queue.h"
 #include"linkedlist.h"
 
+         struct   Node_t * start = NULL;
 
 	unsigned char checkForBalancedParantheses(char* str);
     long long evaluate(char* expression);
@@ -68,6 +69,44 @@ int main()
       traverse(start);
      */
 
+        // Database requirements
+     //struct   Node_t * start = NULL;
+
+    int operation= 0;
+    int data= 0;
+
+
+  for (;;) {
+    printf("1. Insert an element at the beginning of linked list.\n");
+    printf("2. Insert an element at the end of linked list.\n");
+    printf("3. Traverse linked list.\n");
+    printf("4. Delete an element from beginning.\n");
+    printf("5. Delete an element from end.\n");
+    printf("6. Exit\n");
+
+    scanf("%d", &operation);
+
+    if (operation == 1) {
+      printf("Enter value of element\n");
+      scanf("%d", &data);
+      insert_at_begin(&start, data);
+    }
+    else if (operation == 2) {
+      printf("Enter value of element\n");
+      scanf("%d", &data);
+      insert_at_end(&start, data);
+    }
+    else if (operation == 3)
+      display(&start);
+    else if (operation == 4)
+      delete_from_begin(&start);
+    else if (operation == 5)
+      delete_from_end(&start);
+    else if (operation == 6)
+      break;
+    else
+      printf("Please enter valid input.\n");
+  }
 
 
     return 0;

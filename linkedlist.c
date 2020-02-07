@@ -14,11 +14,13 @@ void insert_at_begin(Node_t *start, int data) {
   // if its the first node
   if (start == NULL) {
     start = new_node;
+    start->data = data;
     start->next = NULL;
     return;
   }
 
   new_node->next = start;
+
   start = new_node;
 }
 
@@ -56,11 +58,11 @@ void display(Node_t *start) {
 
   printf("There are %d elements in linked list.\n", count);
 
-  while (new_node->next != NULL) {
+  while (new_node != NULL) {
     printf("%d\n", new_node->data);
     new_node = new_node->next;
   }
-  printf("%d\n", new_node->data); // Print last Node_t
+  //printf("%d\n", new_node->data); // Print last Node_t
 }
 
 void delete_from_begin(Node_t *start) {
